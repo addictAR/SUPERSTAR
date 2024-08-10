@@ -18,7 +18,7 @@ module.exports = (client) => {
             iconURL: musicIcons.playerIcon,
             url: messages.playSong.url
           })
-          .setDescription(`${messages.playSong.song}: **${song.name}**\n${messages.playSong.duration}: \`${song.formattedDuration}\`\n${messages.playSong.source}: ${song.source}`)
+          .setDescription(`- **${messages.playSong.song}**: ${song.name}\n- **${messages.playSong.duration}**: \`${song.formattedDuration}\`\n- **${messages.playSong.source}**: ${song.source}`)
           .setImage(song.thumbnail)
           .setTimestamp();
 
